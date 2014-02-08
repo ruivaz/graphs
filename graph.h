@@ -18,6 +18,7 @@ typedef struct graphTag {
 } graphT;
 
 
+int GraphIsReachable(graphT *graph, char dest, char source);
 void graph_add_vertex(graphT **graph, char element);
-void graph_add_edge(graphT **graph, char dest, char source);
+void graph_add_edge(graphT *graph, char dest, char source);
 int GraphIsReachable(graphT *graph, char dest, char source);
